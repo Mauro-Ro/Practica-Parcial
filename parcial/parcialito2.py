@@ -41,13 +41,10 @@ def verificar_tesoro(mapa: list, x: int, y: int):
     x_tesoro = 0
     y_tesoro = 0
 
-    x_usuario = 0
-    y_usuario = 0
-
     distancia = 0
 
     for i in range(len(mapa)):
-        for j in range(len(mapa)):
+        for j in range(len(mapa[i)):
             if mapa[i][j] == 1:
                 x_tesoro = i
                 y_tesoro = j
@@ -59,7 +56,7 @@ def verificar_tesoro(mapa: list, x: int, y: int):
             print("¡Encontraste el tesoro!")
             return 0
         else:
-            distancia = (x_usuario - x_tesoro) + (y_usuario - y_tesoro)
+            distancia = (x - x_tesoro) + (y - y_tesoro)
             
     print(f"Fallaste. El tesoro está a {distancia} casilleros de distancia.")
 
