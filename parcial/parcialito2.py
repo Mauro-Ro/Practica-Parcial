@@ -44,7 +44,7 @@ def verificar_tesoro(mapa: list, x: int, y: int):
     distancia = 0
 
     for i in range(len(mapa)):
-        for j in range(len(mapa[i)):
+        for j in range(len(mapa[i])):
             if mapa[i][j] == 1:
                 x_tesoro = i
                 y_tesoro = j
